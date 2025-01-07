@@ -42,11 +42,11 @@ def show_progress_bar(total_time):
             # 更新进度条
             if start_minutes <= total_time:
                 progress = '✅' * start_minutes + '⭕️' * (total_time - start_minutes)
-            else:
+                print(f"{progress} ({start_minutes}/{total_time}分钟)", end='\r')
+            elif start_minutes > total_time:
                 # 超出预定时间的情况
                 progress = '✅' * total_time + '⭐️' * (start_minutes - total_time)
-            
-            print(f"{progress} ({start_minutes}/{total_time}分钟)", end='\r')
+                print(f"{progress} ({start_minutes}/{total_time}分钟)", end='\r')
             
     except KeyboardInterrupt:
         print(f"\n提前结束专注！实际专注了{start_minutes}分钟")
