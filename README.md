@@ -9,6 +9,8 @@ This repository will contain some applications that are commonly used locally in
 pomotodo - a simple pomotodo with python in your terminal.
 
 一个命令行番茄钟工具，可自定义专注事件，时长，实际专注与记录。
+![iTerm2-20250110-1751-MyiesExU](https://github.com/user-attachments/assets/fc992989-0262-405e-9e0f-847dc82be0d1)
+
 
 
 ## 笔记类（Takenotes）
